@@ -16,7 +16,7 @@
 	<title>MyProject</title>
 </head>
 <body>
-	<div class='home row' id='singlePage' onresize="changeScreen()">
+	<div class='home row' id='singlePage'>
 		<div class='col-sm-12 col-md-12 col-lg-12 mainInfo'>
 			<p>KROKHMALYI SERHII<br>
 			Software engineer Web UI Trainee<br>
@@ -25,13 +25,13 @@
 		</div>
 	</div>
 
-	<div id='aboutMe' class="home row" onresize="changeScreen()" data-spy="scroll">
+	<div id='aboutMe' class="home row" data-spy="scroll">
 		<div class='image col-xs-12 col-sm-12 col-md-6 col-lg-6'><img src="images/myphoto.jpg"></div>
 		<div class='col-xs-12 col-sm-12 col-md-6 col-lg-6'>
 			<p>Hello!</p>
 			<p>As you've already known, my name is Serhii Krokhmalnyi.
-			I was born in Lviv on the 6 of June.
-			I graduated from Lviv Polytechnic National University in 2014.
+			I was born in Lviv on the 6 of June.</p>
+			<p>I graduated from Lviv Polytechnic National University in 2014.
 			I was working on company named Tickets.UA for two years.
 			It was a good experience to speak with people, find new friends, learn control yourself, of course to receive a bit of extra money.
 			I like traveling. Also I like visiting Poland, because I like their culture and people as they are very friendly. In the nearest future I would to visit another countries.
@@ -43,14 +43,15 @@
 		</div>
 	</div>
 
-	<div id='contact' class='row' onresize="changeScreen()">	
+	<div id='contact' class='row'>	
 		<form class="col-xs-12  col-sm-12 col-md-12 col-lg-12 form-group">
 			<p> My phome number 063-191-07-18</p>
 			<p> Email contact: s.krokhmalnyi@gmail.com</p>
 		    <label for="email"></label>
 		    <input class="form-control" id="email" type="email" placeholder="Your Email:"><br>
-		    <textarea class="form-control" rows="10" cols="45" name="text"></textarea>
+		    <textarea id='textMessage' class="form-control" rows="10" cols="45" name="text"></textarea>
 		    <button id="btn-send">Send</button>
+		    <p id='message'></p>
 	  	</form>
     	<footer id="container" class='col-sm-12 col-md-12 col-lg-12'>
 			<p>Also you can find me at social networks </p>

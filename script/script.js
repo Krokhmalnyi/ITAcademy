@@ -5,6 +5,9 @@ document.getElementById('contact').style.height = screenHeight + 'px';
 
 window.addEventListener("resize", changeScreen);
 
+$('.home').on('resize', changeScreen);
+$('#contact').on('resize', changeScreen);
+
 function changeScreen(){
 	var screenHeight = window.innerHeight;
 	document.getElementById('singlePage').style.height = screenHeight + 'px'; 
@@ -16,16 +19,16 @@ $('#btn-send').click(function(e) {
       url: "https://formspree.io/s.krokhmalnyi@gmail.com",  
       method: "POST",
       error: function () {
-        $('#container').html('<h1>Error!</h1>')
+        $('#message').html('<h1>Error!</h1>');
       },
       data: {
              email: email.value,
-             message: ok.value
+             message: textMessage.value
              },
       dataType: "json"
   }).done(function() {
-     $('#container').html('<h1>Thank you!</h1><h1>Your message has been sent</h1>')
-  } );
+     $('#message').html('<h1>Thank you!</h1><h1>Your message has been sent</h1>');
+  });
   e.preventDefault();
 });
 
