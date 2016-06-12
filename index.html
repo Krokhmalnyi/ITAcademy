@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+    <meta name="author" content="">
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" href="images/favicon.ico" type="image/gif" sizes="16x16">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<script src="script/jquery.easing.min.js"></script>
+	<title>MyProject</title>
+</head>
+<body>
+	<div class='home row' id='singlePage' onresize="changeScreen()">
+		<div class='col-sm-12 col-md-12 col-lg-12 mainInfo'>
+			<p>KROKHMALYI SERHII<br>
+			Software engineer Web UI Trainee<br>
+			<a href="#aboutMe" class='linkToOtherPage page-scroll'><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+			</p>		
+		</div>
+	</div>
+
+	<div id='aboutMe' class="home row" onresize="changeScreen()" data-spy="scroll">
+		<div class='image col-xs-12 col-sm-12 col-md-6 col-lg-6'><img src="images/myphoto.jpg"></div>
+		<div class='col-xs-12 col-sm-12 col-md-6 col-lg-6'>
+			<p>Hello!</p>
+			<p>As you've already known, my name is Serhii Krokhmalnyi.
+			I was born in Lviv on the 6 of June.
+			I graduated from Lviv Polytechnic National University in 2014.
+			I was working on company named Tickets.UA for two years.
+			It was a good experience to speak with people, find new friends, learn control yourself, of course to receive a bit of extra money.
+			I like traveling. Also I like visiting Poland, because I like their culture and people as they are very friendly. In the nearest future I would to visit another countries.
+			But my short-term dream is to get a highly-paid job in SoftServe. <i class="fa fa-smile-o" aria-hidden="true"></i></p>  
+		</div>
+		<div class='col-xs-12 col-sm-12 col-md-12 col-lg-12 linkToOtherPage'>
+			<a href="#singlePage" class="page-scroll"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+			<a href="#contact" class="page-scroll"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+		</div>
+	</div>
+
+	<div id='contact' class='row' onresize="changeScreen()">	
+		<form class="col-xs-12  col-sm-12 col-md-12 col-lg-12 form-group">
+			<p> My phome number 063-191-07-18</p>
+			<p> Email contact: s.krokhmalnyi@gmail.com</p>
+		    <label for="email"></label>
+		    <input class="form-control" id="email" type="email" placeholder="Your Email:"><br>
+		    <textarea class="form-control" rows="10" cols="45" name="text"></textarea>
+		    <button id="btn-send">Send</button>
+	  	</form>
+    	<footer id="container" class='col-sm-12 col-md-12 col-lg-12'>
+			<p>Also you can find me at social networks </p>
+			<a href="http://vk.com/id65654603" target="_blank"><img class= "vk-fb" src="images/vk.jpg"></a>
+			<a href="https://www.facebook.com/" target="_blank"><img class= "vk-fb" src="images/facebook.jpg"></a>
+			<a href="#aboutMe" class='linkToOtherPage page-scroll'><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+		</footer>
+	</div>
+	<script type="text/javascript" src='script/script.js'></script>
+</body>
+</html>
